@@ -1,0 +1,85 @@
+:root{
+    --main-color:rgb(80, 32, 80);
+    --sec-color:rgb(147, 123, 146);
+    --third-color:rgb(238, 104, 164);
+    --fourth-color:#F7F2F7;
+}
+body{
+    background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: -50vw -80vh, 50vw 50vh;
+}
+.container header h1{
+    color: var(--main-color);
+    font-size: 42px;
+    font-weight: 700;
+}
+.container header p{
+    color: var(--sec-color);
+    font-weight: 500;
+}
+.container ul.rate > li {
+    background-color: var(--fourth-color);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    padding: 8px 10px;
+    margin-block: 12px;
+    color: var(--main-color);
+    font-weight: 700;
+}
+.container .cards .user{
+    background-color: var(--main-color);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    padding: 25px;
+    padding-bottom: 12px;
+}
+.container .cards .user img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.container .cards .user .name h3{
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+.container .cards .user .name p{
+    color: var(--third-color);
+}
+.container .cards .user .body-sec{
+    color: white;
+    font-weight: 500;
+}
+@media screen and (min-width:992px) {
+    .container ul.rate > li{
+        width: 75%;
+        padding: 12px 16px;
+    }
+    .container ul.rate > li:nth-child(2){
+        position: relative;
+        left: 45px;
+    }
+    .container ul.rate > li:nth-child(3){
+        position: relative;
+        left: 85px;
+    }
+    .container .cards .inner:nth-child(2) {
+        position: relative;
+        top: 20px;
+    }
+    .container .cards .inner:nth-child(3) {
+        position: relative;
+        top: 40px;
+    }
+}
